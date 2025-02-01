@@ -1,0 +1,435 @@
+#hero .carousel-item {
+    position: relative;
+}
+
+#h3,p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* about */
+
+
+#about-img {
+    
+    border-radius: 10px; /* Slightly rounded corners */
+    box-shadow: 0px 4px 10px rgba(235, 14, 14, 0.1); /* Soft shadow for depth */
+}
+
+
+.about-title {
+    font-size: 2rem;
+    color: whitesmoke; /* Ensure the title has white smoke color */
+    text-align: left;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif; /* Clean, modern font */
+}
+
+.about-text {
+    font-size: 1.1rem;
+    line-height: 1.8; /* Improve readability */
+    color: whitesmoke; /* Light text color */
+    text-align: justify; /* Justify text to align on both sides */
+    margin-bottom: 20px;
+    font-family: 'Helvetica', sans-serif; /* Elegant font */
+}
+
+.about-text i {
+    font-style: italic; /* Styling for the italicized portion of text */
+}
+
+.about-img {
+    width: 100%; /* Ensure image takes full width */
+    height: auto;
+    border-radius: 8px; /* Slight rounding of image corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow to give depth */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.about-img:hover {
+    transform: scale(1.05); /* Slight zoom-in effect on hover */
+}
+
+/* Read More Button Styling */
+.read-more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: whitesmoke; /* Text color inside the button */
+    text-align: center;
+    background-color: #b83d39; /* Dark red background */
+    border: 2px solid #fff;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-decoration: none; /* Remove underline from the link */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover Animation for Button */
+.read-more-btn:hover {
+    background-color: #9d3e34; /* Lighter red background on hover */
+    color: white; /* Text color changes to white on hover */
+    transform: scale(1.1); /* Slight zoom-in effect */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Add shadow for hover effect */
+}
+
+
+
+/* Styling for the Services Section */
+#services {
+    background-color: #f8f9fa;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/* Darker and Stylish Heading */
+.services-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #b83d39;
+    padding-bottom: 10px;
+}
+
+/* Card Styling */
+.service-card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    height: 100%; /* Cards ki height fix karne ke liye */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Image Container Styling */
+.card-img-container {
+    width: 100%;
+    height: 250px; /* Fix image height */
+    overflow: hidden;
+}
+
+.service-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images fit nicely */
+    transition: transform 0.3s ease;
+}
+
+/* Card Body Styling */
+.service-card .card-body {
+    flex-grow: 1; /* Body ko flexible banane ke liye */
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Content ko evenly space dene ke liye */
+}
+
+/* Card Title Styling */
+.service-card .card-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Card Text Styling */
+.service-card .card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Hover Effect for Service Cards */
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.service-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Equal height for all cards */
+.row .col-md-4 {
+    display: flex;
+}
+
+.service-card {
+    flex: 1; /* Cards ko equal size dene ke liye */
+}
+
+
+
+
+/*  */
+
+.gallery-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+    
+}
+.gallery-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.gallery-img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    cursor: pointer;
+}
+.modal-body {
+    position: relative;
+    text-align: center;
+}
+.modal-img {
+    width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: rgb(255, 28, 28);
+}
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    cursor: pointer;
+    color: rgb(52, 51, 51);
+    padding: 10px;
+}
+.prev { left: 10px; }
+.next { right: 10px; }
+
+
+/*  */
+
+/* Video Gallery Section */
+#video-gallery {
+    background-color: #f4f4f4;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/* Video Gallery Heading */
+.video-gallery-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 3px solid #b83d39; /* Underline with color */
+    padding-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow to heading */
+    animation: fadeIn 1s ease-in-out; /* Animation for heading */
+    text-align: center; /* Centering the main heading */
+}
+
+/* Ensure video cards have the same size with equal padding, bottom margin, and hover effect */
+.video-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: 15px 20px; /* Same padding on left and right */
+    margin-bottom: 30px; /* Adds margin to the bottom of each video card for spacing */
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 8px; /* Rounded corners for the card */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to the card */
+}
+
+/* Hover effect for the video card */
+.video-card:hover {
+    transform: translateY(-5px); /* Slightly lift the card */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+/* Fixed size for videos */
+.video-iframe {
+    width: 100%;
+    height: 200px; /* You can adjust the height as per your need */
+    border-radius: 8px;
+}
+
+/* Optional: Ensure the video heading style is consistent */
+.video-heading-top {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+
+
+/* Mobile-specific styles */
+@media (max-width: 767px) {
+    /* Center the video cards in mobile view */
+    .video-card {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px; /* Smaller bottom margin for mobile */
+        width: 90%; /* Make the video cards slightly smaller on mobile */
+    }
+
+    /* Ensure the row layout is stacked vertically */
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Optional: Adjust the video size in mobile view */
+    .video-iframe {
+        height: 180px; /* Slightly smaller video height for mobile */
+    }
+
+    /* Optional: Adjust heading size for mobile */
+    .video-heading-top {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    /* Adjust the 'Read More' button for mobile */
+    .read-more-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+
+
+/* Footer */
+
+.custom-footer {
+    background-color: #111;
+    position: relative;
+    color: white;
+    padding: 40px 20px;
+}
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+}
+.footer-box {
+    flex: 1;
+    min-width: 250px;
+    padding: 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+    text-align: left;
+}
+.footer-box h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+.footer-box h3 i {
+    margin-right: 10px;
+    color: #f39c12;
+}
+.footer-box ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-box ul li a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+    transition: 0.3s;
+}
+.footer-box ul li a i {
+    margin-right: 10px;
+    color: #f39c12;
+}
+.footer-box ul li a:hover {
+    color: #f39c12;
+    padding-left: 5px;
+}
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+    transition: 0.3s;
+}
+.social-icons a:hover {
+    color: #f39c12;
+    transform: scale(1.2);
+}
+.footer-logo {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+}
+.footer-logo img {
+    width: 150px;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.gallery img {
+    width: 100%;
+    border-radius: 8px;
+}
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.contact-info div {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+.copyright {
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin-top: 20px;
+}
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-logo {
+        text-align: center;
+    }
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contact-info {
+        flex-direction: column;
+    }
+}
