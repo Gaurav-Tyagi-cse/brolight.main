@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brolight Production</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: Georgia, 'Times New Roman', Times, serif; color: white; }
+        .social-icons a { color: white; margin: 0 10px; font-size: 20px; }
+        .services .card { transition: transform 0.3s ease-in-out; }
+        .services .card:hover { transform: scale(1.05); }
+        /* Hero Section */
+        .hero-section {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: bold;
+    /* text-transform: uppercase; */
+    color: #ffffff;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+.hero-text p {
+    font-size: 20px;
+    color: white;
+    animation: fadeIn 2s ease-in-out;
+    position: relative;
+    z-index: 2;
+}
+
+/* Blur effect behind the text */
+.blur-effect {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    filter: blur(10px);
+    z-index: 1;
+}
+
+    </style>
+
+    <!-- navbar -->
+<style>
+     .navbar {
+        background: transparent; /* Default transparent */
+        transition: background 0.4s ease-in-out;
+    }
+
+    .nav-link{
+        color: #ffffff;
+    }
+
+    .navbar.scrolled {
+        background: rgba(0, 0, 0, 0.8); /* Scroll hone ke baad color */
+    }
+
+    /* Social Icons */
+    .social-icons {
+        position: absolute;
+        top: 20px;
+        right: 40px;
+        display: flex;
+        gap: 15px;
+        z-index: 10;
+    }
+
+    .social-link {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        position: relative;
+    }
+
+    .icon-bg {
+        width: 100%;
+        height: 100%;
+        background: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease;
+    }
+
+    .social-link img {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* Hover Effect */
+    .social-link:hover .icon-bg {
+        transform: scaleX(1.2) translateX(5px);
+    }
+
+    
+       
+
+        /* Dropdown Styling */
+.dropdown-menu {
+    background-color: whitesmoke;
+    border-radius: 5px;
+    border-color: black;
+}
+
+.dropdown-item {
+    color: black;
+}
+
+.dropdown-item:hover {
+    background-color: black;
+    color: #ffffff;
+}
+
+        /* Mobile Mode - Social Icons Bottom Par */
+        @media (max-width: 768px) {
+            .social-icons {
+                top: auto;
+                bottom: 20px;
+                right: 50%;
+                transform: translateX(50%);
+                gap: 10px;
+            }
+    
+            .social-link {
+                width: 40px;
+                height: 40px;
+            }
+    
+            .social-link img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+    
+    /* Default Hide in Mobile */
+@media (max-width: 991px) {
+    .social-icons {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: transparent;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .social-icons.show-icons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-right: 19px;
+    }
+
+    .social-icons a .icon-bg {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: white;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .social-icons a:hover .icon-bg {
+        transform: scale(1.2) translateX(10px);
+    }
+}
+
+</style>
+
+<style>
+    .underline {
+        display: inline-block;
+        position: relative;
+    }
+    .underline:after {
+        content: '';
+        position: absolute;
+        width: 50%;
+        left: 25%;
+        bottom: -4px;
+        height: 2px;
+        background-color: black;
+        
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+</style>
+
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo2.png" alt="BROLIGHT PRODUCTION Logo" style="height: 50px; width: auto;">
+            </a>
+    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            
+                    <!-- Gallery Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="galleryDropdown" role="button" data-bs-toggle="dropdown">
+                            Gallery
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="galleryDropdown">
+                            <li><a class="dropdown-item" href="#">Photo</a></li>
+                            <li><a class="dropdown-item" href="#">Video</a></li>
+                        </ul>
+                    </li>
+            
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+    
+            <!-- Social Media Icons -->
+            <div class="social-icons">
+                <a href="#" class="social-link">
+                    <div class="icon-bg"><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook"></div>
+                </a>
+                <a href="#" class="social-link">
+                    <div class="icon-bg"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></div>
+                </a>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="hero-section">
+        <img src="./images/service.jpeg" alt="Hero Image" class="hero-img">
+        <div class="hero-text">
+            <h1>Services</h1>
+            <p>Home / Our services</p>
+            <div class="blur-effect"></div>
+        </div>
+    </section>
+    
+
+    <section id="services">
+        
+        <div class="container text-center mt-5">
+            <h1 class="font-weight-bold underline" style="color: black;">Our Services</h1>
+            <p>Please have a look below to know more about our services</p>
+        </div>        
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card service-card">
+                    <div class="card-img-container">
+                        <img src="./images/pre-new2.jpg" class="card-img-top" alt="Service 1">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title"><b><i>Pre-Wedding Shoot</i></b></h5>
+                        <p class="card-text">"Capturing timeless moments and love stories through a lens-your perfect prewedding photoshoot."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card service-card">
+                    <div class="card-img-container">
+                        <img src="./images/Maternity.webp" class="card-img-top" alt="Service 2">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Maternity Photoshoot</h5>
+                        <p class="card-text">"Celebrating the beauty of motherhood with a heartfelt maternity photoshoot."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card service-card">
+                    <div class="card-img-container">
+                        <img src="./images/podcastt.jpeg" class="card-img-top" alt="Service 3">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Podcast Shoot</h5>
+                        <p class="card-text">"Capturing the essence of your podcast with engaging and professional photoshoots."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card service-card">
+                    <div class="card-img-container">
+                        <img src="./images/eve-new.jpeg" class="card-img-top" alt="Service 3">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Event Photoshoot</h5>
+                        <p class="card-text">"Preserving the magic of your event with vibrant and memorable photography."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card service-card">
+                    <div class="card-img-container">
+                        <img src="./images/product.jpg" class="card-img-top" alt="Service 3">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Product Shoot</h5>
+                        <p class="card-text">"Showcasing your products with stunning, high-quality photography that speaks volumes."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card service-card">
+                    <div class="card-img-container">
+                        <img src="./images/model.webp" class="card-img-top" alt="Service 3">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Model Shoot</h5>
+                        <p class="card-text">"Highlighting elegance and style through captivating model photoshoots."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer style="background-color: #0a0a0a; color: white; padding: 50px 5%; font-family: 'Poppins', sans-serif; font-size: 16px;">
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap; align-items: flex-start; gap: 30px;">
+            <div style="max-width: 300px;">
+                <h2 style="color: rgb(192, 239, 247); font-weight: 700;">BROLIGHT PRODUCTION</h2>
+                <p style="line-height: 1.6;">We provide premium film services, capturing your special moments with expertise and creativity.</p>
+            </div>
+            
+            <div>
+                <h3 style="color: rgb(192, 239, 247); font-weight: 600;">Services</h3>
+                <ul style="list-style: none; padding: 0; line-height: 2;">
+                    <li>Commercial Ad Shoot</li>
+                    <li>Shortfilm Shoot</li>
+                    <li>Podcast Studio Shoot On Rent</li>
+                    <li>Music Shoot</li>
+                    <li>Model Shoot</li>
+                    <li>More Services...</li>
+                </ul>
+            </div>
+            
+            <div>
+                <h3 style="color: rgb(192, 239, 247); font-style: 16px;">Our Links</h3>
+                <ul style="list-style: none; padding: 0; line-height: 2;">
+                    <li>Home</li>
+                    <li>About us</li>
+                    <li>Images</li>
+                    <li>Videos</li>
+                    <li>Services</li>
+                    <li>Contact us</li>
+                </ul>
+            </div>
+            
+            <div>
+                <h3 style="color: rgb(192, 239, 247); font-weight: 600;">Gallery</h3>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px;">
+                    <img src="./images/flick1.jpeg" alt="Gallery Image" width="90" height="90" style="border-radius: 8px;">
+                    <img src="./images/flick2.jpeg" alt="Gallery Image" width="90" height="90" style="border-radius: 8px;">
+                    <img src="./images/flick3.jpg" alt="Gallery Image" width="90" height="90" style="border-radius: 8px;">
+                    <img src="./images/flick4.jpeg" alt="Gallery Image" width="90" height="90" style="border-radius: 8px;">
+                    <img src="./images/flick5.jpeg" alt="Gallery Image" width="90" height="90" style="border-radius: 8px;">
+                    <img src="./images/flick6.jpeg" alt="Gallery Image" width="90" height="90" style="border-radius: 8px;">
+                </div>
+            </div>
+        </div>
+        
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-top: 40px; gap: 30px;">
+            <div style="display: flex; align-items: center; gap: 15px; text-align: left;">
+                <i class="fas fa-phone" style="font-size: 40px; color: rgb(192, 239, 247);"></i>
+                <div>
+                    <p style="font-weight: 600; margin: 0;">Call us now</p>
+                    <p style="margin: 0;">+91 7827460354</p>
+                </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 15px; text-align: left;">
+                <i class="fas fa-envelope" style="font-size: 40px; color: rgb(192, 239, 247);"></i>
+                <div>
+                    <p style="font-weight: 600; margin: 0;">Email Address</p>
+                    <p style="margin: 0;">brolightproduction@gmail.com</p>
+                </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 15px; text-align: left;">
+                <i class="fas fa-map-marker-alt" style="font-size: 40px; color: rgb(192, 239, 247);"></i>
+                <div>
+                    <p style="font-weight: 600; margin: 0;">Location</p>
+                    <p style="margin: 0;">Building no 159, A-block,<br>Transport Nagar, Sector 69,<br>Noida, U.P 201301</p>
+                </div>
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <h3 style="color: rgb(192, 239, 247); font-weight: 600; margin: 0;">Social Icons</h3>
+                <div style="display: flex; gap: 15px;">
+                    <a href="#"><i class="fab fa-facebook" style="font-size: 40px; color: rgb(192, 239, 247);"></i></a>
+                    <a href="#"><i class="fab fa-instagram" style="font-size: 40px; color: rgb(192, 239, 247);"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div style="text-align: start; margin-top: 40px; border-top: 1px solid gray; padding-top: 20px;">
+            <p>&copy; 2024 Brolight Production. All rights reserved. Designed and Maintained by <strong style="color: rgb(192, 239, 247);">Bhoomi Techzone Pvt. Ltd.</strong></p>
+        </div>
+    </footer>
+<script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brolight Production</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- font-awsome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        body { font-family: Arial, sans-serif; }
+        body { font-family: Georgia, 'Times New Roman', Times, serif; }
         .carousel-item img { height: 500px; object-fit: cover; width: 100%; }
         .about img { max-width: 100%; border-radius: 10px; }
         .services .card { transition: transform 0.3s ease-in-out; }
@@ -44,7 +49,7 @@
                         </ul>
                     </li>
             
-                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
             </div>
@@ -360,7 +365,11 @@
                 <p>We are a Film Company, capturing emotions since over a decade with our team of highly experienced team of Photographers and Cinematographers.</p>
                 <p>We are a premium film company with over ten years of experience. Our team of skilled photographers and cinematographers captures beautiful moments. Based in Noida with 7 years of local experience, we provide all your photography needs, from destination pre-wedding shoots to photo booth setups, all in one place.</p>
                 <!-- Read More Button -->
-                <a href="#more-info" class="read-more-btn">Read More</a>
+                <div class=" py-3">
+                    <a href="about.php"><button class="my-btn">
+                            <b>View more</b>
+                        </button></a>
+                </div>
             </div>
             <div class="col-md-6 text-center">
                 <img src="./images/about.webp" class="about-img" style="width: 100%;" alt="About Us">
@@ -369,88 +378,82 @@
     </section>
     
     
-    <section id="services" class="container py-5">
-        <h2 class="text-center mb-4 services-heading">Our Services </h2>
-        <p class="text-center  services-heading">Please have a look below to know more <br>about our services</p>
-        
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card service-card">
-                    <div class="card-img-container">
-                        <img src="./images/pre-new2.jpg" class="card-img-top" alt="Service 1">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title"><b><i>Pre-Wedding Shoot</i></b></h5>
-                        <p class="card-text">"Capturing timeless moments and love stories through a lens-your perfect prewedding photoshoot."</p>
-                    </div>
+    <section class="py-4">
+        <div class="container">
+            <div class="row animated3">
+                <div class="col-12 text-center service ">
+                    <h2 class="text-line">Our Services</h2>
+                    <h5 class="py-4">Please have a look below to know more <br> about our services</h5>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card service-card">
-                    <div class="card-img-container">
-                        <img src="./images/Maternity.webp" class="card-img-top" alt="Service 2">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Maternity Photoshoot</h5>
-                        <p class="card-text">"Celebrating the beauty of motherhood with a heartfelt maternity photoshoot."</p>
-                    </div>
-                </div>
-            </div>
+                                             <div class="col-md-4 col-lg-4 mb-4">
+                            <a href="#" class="text-decoration-none text-dark">
+                                <div class="serv-cards">
+                                    <img src="./images/pre-new1.jpg" alt="Card Image" class="serv-cards-image ">
+                                    <div class="serv-cards-content">
+                                        <h2 class="serv-cards-title">Pre-Wedding Shoot</h2>
+                                        <p class="serv-cards-text text-white"><p>"Capturing timeless moments and love stories through a lens - your perfect prewedding photoshoot."</p></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
 
-            <div class="col-md-4">
-                <div class="card service-card">
-                    <div class="card-img-container">
-                        <img src="./images/podcastt.jpeg" class="card-img-top" alt="Service 3">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Podcast Shoot</h5>
-                        <p class="card-text">"Capturing the essence of your podcast with engaging and professional photoshoots."</p>
-                    </div>
-                </div>
-            </div>
+                            <div class="col-md-4 col-lg-4 mb-4">
+                            <a href="#" class="text-decoration-none text-dark">
+                                <div class="serv-cards">
+                                    <img src="images/Maternity.webp" alt="Card Image" class="serv-cards-image ">
+                                    <div class="serv-cards-content">
+                                        <h2 class="serv-cards-title">Maternity Photoshoot</h2>
+                                        <p class="serv-cards-text text-white"><p>"Celebrating the beauty of motherhood with a heartfelt maternity photoshoot."</p></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
 
-            <div class="col-md-4">
-                <div class="card service-card">
-                    <div class="card-img-container">
-                        <img src="./images/eve-new.jpeg" class="card-img-top" alt="Service 3">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Event Photoshoot</h5>
-                        <p class="card-text">"Preserving the magic of your event with vibrant and memorable photography."</p>
-                    </div>
-                </div>
-            </div>
 
-            <div class="col-md-4">
-                <div class="card service-card">
-                    <div class="card-img-container">
-                        <img src="./images/product.jpg" class="card-img-top" alt="Service 3">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Product Shoot</h5>
-                        <p class="card-text">"Showcasing your products with stunning, high-quality photography that speaks volumes."</p>
-                    </div>
-                </div>
-            </div>
+                             <div class="col-md-4 col-lg-4 mb-4">
+                            <a href="#" class="text-decoration-none text-dark">
+                                <div class="serv-cards">
+                                    <img src="images/podcastt.jpeg" alt="Card Image" class="serv-cards-image ">
+                                    <div class="serv-cards-content">
+                                        <h2 class="serv-cards-title">Podcast Shoot</h2>
+                                        <p class="serv-cards-text text-white"><p>"Capturing the essence of your podcast with engaging and professional photoshoots."</p></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
 
-            <div class="col-md-4">
-                <div class="card service-card">
-                    <div class="card-img-container">
-                        <img src="./images/model.webp" class="card-img-top" alt="Service 3">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Model Shoot</h5>
-                        <p class="card-text">"Highlighting elegance and style through captivating model photoshoots."</p>
-                    </div>
+                            <div class="col-md-4 col-lg-4 mb-4">
+                            <a href="#" class="text-decoration-none text-dark">
+                                <div class="serv-cards">
+                                    <img src="images/eve-new.jpeg" alt="Card Image" class="serv-cards-image ">
+                                    <div class="serv-cards-content">
+                                        <h2 class="serv-cards-title">Event Photoshoot</h2>
+                                        <p class="serv-cards-text text-white"><p>"Preserving the magic of your event with vibrant and memorable photography."</p></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        
+                            <div class="col-md-4 col-lg-4 mb-4">
+                            <a href="#" class="text-decoration-none text-dark">
+                                <div class="serv-cards">
+                                    <img src="images/product.jpg" alt="Card Image" class="serv-cards-image ">
+                                    <div class="serv-cards-content">
+                                        <h2 class="serv-cards-title">Product Shoot</h2>
+                                        <p class="serv-cards-text text-white"><p>"Showcasing your products with stunning, high-quality photography that speaks volumes."</p></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- add more -->
                 </div>
-            </div>
         </div>
     </section>
     
 <!-- Gallary Section -->
 
-<section id="gallery" class="container py-5">
-    <h2 class="text-center mb-4 services-heading">Latest Gallery</h2>
+<section id="gallery" class="container text-center mt-5">
+    <h2 class="text-center mb-4 underline"><b>Latest Image Gallery</b> </h2>
     <div class="row">
         <!-- Gallery Items -->
         <div class="col-md-3 col-sm-6 mb-4">
@@ -512,130 +515,304 @@
 
 
     <!-- Video Section -->
-    <section id="video-gallery" class="container py-5">
-        <h2 class="text-center mb-4 video-gallery-heading">Latest Video Gallery</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="video-card">
-                    <h5 class="video-heading-top">Podcast video Shoot</h5>
-                    <iframe class="video-iframe" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="text-center py-3 service">
+                    <h2 style="font-family: Georgia, 'Times New Roman', Times, serif;" class="text-line">Video Gallery
+                    </h2>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="video-card">
-                    <h5 class="video-heading-top"><i>Wedding video shoot</i></h5>
-                    <iframe class="video-iframe" src="https://www.youtube.com/embed/3JZ_D3ELwOQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="col-md-6 mb-4">
+                    <div class="video">
+                        <div class="video-header ">
+                            <h2>Kids video Shoot</h2>
+                        </div>
+                        <div class="video-body">
+
+                            <iframe width="" height="" class="iframe-content " src="https://www.youtube.com/embed/iUw7Mumavt8?si=nxIx3wdYdhwHXR37" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="video-card">
-                    <h5 class="video-heading-top">Pre-Wedding video shoot</h5>
-                    <iframe class="video-iframe" src="https://www.youtube.com/embed/lY3JYkE9kmk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+                 <div class="col-md-6 mb-4">
+                    <div class="video">
+                        <div class="video-header ">
+                            <h2>Podcast video Shoot</h2>
+                        </div>
+                        <div class="video-body">
+
+                            <iframe width="" height="" class="iframe-content " src="https://www.youtube.com/embed/I0TEjt0sKJQ?si=CVwMNIvNPFKqXviB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
                 </div>
+
             </div>
-        </div>
-    
-        <!-- Centered View More Button -->
-        <div class="text-center mt-4">
-            <a href="#more-info" class="read-more-btn">Read More</a>
+
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="video">
+                        <div class="video-header ">
+                            <h2>Wedding video Shoot</h2>
+                        </div>
+                        <div class="video-body">
+
+                          <iframe class="iframe-content " src="https://www.youtube.com/embed/VN9sI-gXugE?si=SjxgmiGCdT-N0HHl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                    <div class="video">
+                        <div class="video-header ">
+                            <h2>Pre-Wedding video shoot</h2>
+                        </div>
+                        <div class="video-body">
+
+                         <iframe class="iframe-content " src="https://www.youtube.com/embed/f2-EVLf4ZIc?si=WXBvy6kutCBHX2ZK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                        </div>
+                    </div>
+                </div>
+
+               
+            </div>
+
+            <div class=" py-3 text-center">
+                <a href="video.php"><button class="my-btn">
+                        <b>View more</b>
+                    </button></a>
+            </div>
         </div>
     </section>
     
     
-    
-    
-    
-    
-    
-   
-    
-    
-    
-    
-    <footer style="background-color: #0a0a0a; color: white; padding: 50px 5%; font-family: 'Poppins', sans-serif; font-size: 16px;">
-        <div style="display: flex; justify-content: space-between; flex-wrap: wrap; align-items: flex-start; gap: 30px;">
-            <div style="max-width: 300px;">
-                <h2 style="color: rgb(192, 239, 247); font-weight: 700;">BROLIGHT PRODUCTION</h2>
-                <p style="line-height: 1.6;">We provide premium film services, capturing your special moments with expertise and creativity.</p>
-            </div>
-            
-            <div>
-                <h3 style="color: rgb(192, 239, 247); font-weight: 600;">Services</h3>
-                <ul style="list-style: none; padding: 0; line-height: 2;">
-                    <li>Commercial Ad Shoot</li>
-                    <li>Shortfilm Shoot</li>
-                    <li>Podcast Studio Shoot On Rent</li>
-                    <li>Music Shoot</li>
-                    <li>Model Shoot</li>
-                    <li>More Services...</li>
-                </ul>
-            </div>
-            
-            <div>
-                <h3 style="color: rgb(192, 239, 247); font-style: 16px;">Our Links</h3>
-                <ul style="list-style: none; padding: 0; line-height: 2;">
-                    <li>Home</li>
-                    <li>About us</li>
-                    <li>Images</li>
-                    <li>Videos</li>
-                    <li>Services</li>
-                    <li>Contact us</li>
-                </ul>
-            </div>
-            
-            <div>
-                <h3 style="color: rgb(192, 239, 247); font-weight: 600;">Gallery</h3>
-                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px;">
-                    <img src="./images/flick1.jpeg" alt="Gallery Image" width="90" height="90" style="border-radius: 8px;">
-                    <img src="./images/flick2.jpeg" alt="Gallery Image" width="90" height="90" style="border-radius: 8px;">
-                    <img src="./images/flick3.jpg" alt="Gallery Image" width="90" height="90" style="border-radius: 8px;">
-                    <img src="./images/flick4.jpeg" alt="Gallery Image" width="90" height="90" style="border-radius: 8px;">
-                    <img src="./images/flick5.jpeg" alt="Gallery Image" width="90" height="90" style="border-radius: 8px;">
-                    <img src="./images/flick6.jpeg" alt="Gallery Image" width="90" height="90" style="border-radius: 8px;">
+  <!-- one liner  -->
+
+  <section>
+    <div class="container-fluid about2">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-md-12">
+                <div class="bgg align-items-center justify-content-center d-flex text-white ">
+                    <div class=" text-center ">
+                        <h3>" If you're looking for a memorable event, Let us make it possible. "</h3>
+                        <h4 class=""><b>Brolight Production</b></h4>
+                    </div>
                 </div>
             </div>
         </div>
-        
-        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-top: 40px; gap: 30px;">
-            <div style="display: flex; align-items: center; gap: 15px; text-align: left;">
-                <i class="fas fa-phone" style="font-size: 40px; color: rgb(192, 239, 247);"></i>
-                <div>
-                    <p style="font-weight: 600; margin: 0;">Call us now</p>
-                    <p style="margin: 0;">+91 7827460354</p>
+    </div>
+</section>
+
+ <!-- footer  -->
+ <section class="py-3 " style="background-color: rgb(0, 0, 0);">
+    <div class="container ">
+        <div class="row mb-2">
+            <div class="col-md-6 col-lg-3">
+                <div class="text-white">
+                    <img src="images/logo2.png" style="width: 180px" alt="">
+                    <p class="pt-4">We provide premium film services, capturing your special moments with expertise and creativity. 
+                    </p>
                 </div>
             </div>
-            <div style="display: flex; align-items: center; gap: 15px; text-align: left;">
-                <i class="fas fa-envelope" style="font-size: 40px; color: rgb(192, 239, 247);"></i>
-                <div>
-                    <p style="font-weight: 600; margin: 0;">Email Address</p>
-                    <p style="margin: 0;">brolightproduction@gmail.com</p>
+
+            <div class="col-md-6 col-lg-3 ">
+                <div class=" footer-menu">
+                    <h5 style="color:rgb(192, 239, 247);"><b> Services</b></h5>
+                    <ul class="list-unstyled mt-3">
+                        <a href='#' class='text-decoration-none  text-white'>
+                            <li>Commercial Ad Shoot</li>
+                        </a><a href='#' class='text-decoration-none  text-white'>
+                            <li>Shortfilm Shoot</li>
+                        </a><a href='#' class='text-decoration-none  text-white'>
+                            <li>Podcast Studio Shoot On Rent</li>
+                        </a><a href='#' class='text-decoration-none  text-white'>
+                            <li>Music Shoot</li>
+                        </a><a href='#' class='text-decoration-none  text-white'>
+                            <li>Model Shoot</li>
+                        </a>
+                         <a href="services.html" class="text-decoration-none  text-white">
+                            <li>More Services...</li>
+                        </a>
+                        </a>
+                    </ul>
                 </div>
             </div>
-            <div style="display: flex; align-items: center; gap: 15px; text-align: left;">
-                <i class="fas fa-map-marker-alt" style="font-size: 40px; color: rgb(192, 239, 247);"></i>
-                <div>
-                    <p style="font-weight: 600; margin: 0;">Location</p>
-                    <p style="margin: 0;">Building no 159, A-block,<br>Transport Nagar, Sector 69,<br>Noida, U.P 201301</p>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="footer-menu">
+                    <h5 style="color:rgb(192, 239, 247);"><b>Our Links</b></h5>
+
+                    <ul class="list-unstyled mt-3">
+                        <a href="index.html" class="text-decoration-none  text-white">
+                            <li>Home</li>
+                        </a>
+                        <a href="about.html" class="text-decoration-none  text-white">
+                            <li>About us</li>
+                        </a>
+                        <a href="gallery.html" class="text-decoration-none  text-white">
+                            <li>Images</li>
+                        </a>
+                        <a href="video.html" class="text-decoration-none  text-white">
+                            <li>Videos</li>
+                        </a>
+                        <a href="services.html" class="text-decoration-none  text-white">
+                            <li>Services</li>
+                        </a>
+                        <a href="contact.html" class="text-decoration-none  text-white">
+                            <li>Contact us</li>
+                        </a>
+                        </a>
+                    </ul>
                 </div>
             </div>
-            <div style="display: flex; flex-direction: column; align-items: center;">
-                <h3 style="color: rgb(192, 239, 247); font-weight: 600; margin: 0;">Social Icons</h3>
-                <div style="display: flex; gap: 15px;">
-                    <a href="#"><i class="fab fa-facebook" style="font-size: 40px; color: rgb(192, 239, 247);"></i></a>
-                    <a href="#"><i class="fab fa-instagram" style="font-size: 40px; color: rgb(192, 239, 247);"></i></a>
+            <!-- Image Grid -->
+            <div class="col-md-6 col-lg-3">
+                <div class="">
+                    <h5 style="color:rgb(192, 239, 247);"><b>Gallery</b></h5>
+                    <div class="mt-3">
+                        <div class="d-flex flick mb-2">
+                            <div class="mx-1 cards overflow-hidden">
+                                <img src="images/flick.jpeg" alt="">
+                            </div>
+                            <div class="mx-1 cards overflow-hidden">
+                                <img src="images/flick1.jpeg" alt="">
+                            </div>
+                            <div class="mx-1 cards overflow-hidden">
+                                <img src="images/flick2.jpeg" alt="">
+                            </div>
+                        </div>
+                        <div class="d-flex flick mb-2">
+                            <div class="mx-1 cards overflow-hidden">
+                                <img src="images/flick6.jpeg" alt="">
+                            </div>
+                            <div class="mx-1 cards overflow-hidden">
+                                <img src="images/flick4.jpeg" alt="">
+                            </div>
+                            <div class="mx-1 cards overflow-hidden">
+                                <img src="images/flick5.jpeg" alt="">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            
+
+            <!-- Modal Structure -->
+            <div id="imageModal" class="modal">
+                <span class="cross">&times;</span>
+                <img class="modal-content" id="modalImage">
+                <div id="caption"></div>
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+            </div>
+
         </div>
-        
-        <div style="text-align: start; margin-top: 40px; border-top: 1px solid gray; padding-top: 20px;">
-            <p>&copy; 2024 Brolight Production. All rights reserved. Designed and Maintained by <strong style="color: rgb(192, 239, 247);">Bhoomi Techzone Pvt. Ltd.</strong></p>
+
+
+
+
+        <div class="row text-white pt-2 footer-hr">
+            <div class="col-md-6 col-lg-3 mb-2">
+                <div class="d-flex align-items-center">
+                    <div class="icons pe-3">
+                        <i class="fa-solid fa-phone-volume fs-1" style="color:rgb(192, 239, 247);"></i>
+                    </div>
+                    <div class="p-0">
+                        <h5 class="m-0"><b>Call us now</b></h5>
+                        <p class="m-0">+91 7827460354</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-2">
+                <div class="d-flex align-items-center ">
+                    <div class="icons pe-3">
+                        <i class="fa-solid fa-envelope fs-1" style="color:rgb(192, 239, 247);"></i>
+                    </div>
+                    <div class="p-0">
+                        <h5 class="m-0"><b>Email Address</b></h5>
+                        <p class="m-0" style="word-break: break-all;">brolightproduction@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-2">
+                <div class="d-flex align-items-center ">
+                    <div class="icons pe-3 ">
+                        <i class="fa-solid fa-location-dot fs-1" style="color:rgb(192, 239, 247);"></i>
+                    </div>
+                    <div class="p-0">
+                        <h5 class="m-0"><b>Location</b></h5>
+                        <p class="m-0">Building no 159,A-block,Transport Nagar, Sector 69, Noida, U.P 201301</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 mb-2">
+                <div class="d-flex  ">
+
+                    <div class="">
+                        <h5 class="text-center"><b>Social Icons</b></h5>
+                        <div class="d-flex " role="search">
+                            <div class="card border-0 m-0">
+                                <ul>
+                                    <li class="iso-pro pt-3  m-0">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <a href="https://www.facebook.com/brolightproduction/" target="_blank">
+                                            <svg viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"
+                                                class="svg ">
+                                                <path
+                                                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                                                </path>
+                                            </svg></a>
+                                        <!-- <div class="text">Facebook</div> -->
+                                    </li>
+                                  
+                                    <li class="iso-pro pt-3  m-0">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <a href="https://www.instagram.com/brolight_production/" target="_blank">
+                                            <svg class="svg" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 448 512" style="color:#C13584";>
+                                                <path
+                                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <!-- <div class="text">Instagram</div> -->
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </footer>
+        <hr>
+
+        <div class="row text-white ">
+            <div class="col-md-12">
+                <div class="justify-content-center align-items-center d-flex">
+                    <h6> &copy; Copyright 2024 <span style="color:rgb(192, 239, 247);">Brolight Production</span>.
+                        All rights reserved Designed and Maintained by <a class="text-decoration-none text-white" href="http://www.bhoomitechzone.com/"> Bhoomi Techzone Pvt. Ltd.</a>
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- footer ends  -->
+
+
+
+
+<!-- js cdn -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+<script src="./script.js"></script>
     
 
 
-<script src="script.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
