@@ -75,19 +75,35 @@ transform: scaleX(1.2) translateX(5px);
 
 /* Dropdown Styling */
 .dropdown-menu {
-background-color: whitesmoke;
-border-radius: 5px;
-border-color: black;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Dropdown Items */
 .dropdown-item {
-color: black;
+    color: black !important;
+    font-weight: 500;
 }
 
-.dropdown-item:hover {
-background-color: black;
-color: #ffffff;
+/* Dropdown Icons */
+.dropdown-item i {
+    margin-right: 8px;
 }
+
+/* Hover Effect */
+.dropdown-item:hover {
+    background-color: black !important;
+    color: #ffffff !important;
+}
+
+/* Chevron Dropdown Icon */
+.navbar-nav .nav-item .dropdown-toggle i {
+    font-size: 14px;
+    margin-left: 5px;
+}
+
 
 
 /* Mobile Mode: Reduce Carousel Height */
