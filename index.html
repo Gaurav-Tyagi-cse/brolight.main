@@ -360,7 +360,7 @@
                 <p>We are a premium film company with over ten years of experience. Our team of skilled photographers and cinematographers captures beautiful moments. Based in Noida with 7 years of local experience, we provide all your photography needs, from destination pre-wedding shoots to photo booth setups, all in one place.</p>
                 <!-- Read More Button -->
                 <div class=" py-3">
-                    <a href="about.php"><button class="my-btn">
+                    <a href="about.html"><button class="my-btn">
                             <b>View more</b>
                         </button></a>
                 </div>
@@ -452,43 +452,48 @@
         <!-- Gallery Items -->
         <div class="col-md-3 col-sm-6 mb-4">
             <div class="gallery-card" onclick="openModal(0)">
-                <img src="./images/pre1.jpeg" class="gallery-img" alt="Gallery 1">
+                <img src="./images/pre17.jpeg" class="gallery-img" alt="Gallery 1">
             </div>
         </div>
         <div class="col-md-3 col-sm-6 mb-4">
             <div class="gallery-card" onclick="openModal(1)">
-                <img src="./images/img18.jpeg" class="gallery-img" alt="Gallery 2">
+                <img src="./images/pre1.jpeg" class="gallery-img" alt="Gallery 2">
             </div>
         </div>
         <div class="col-md-3 col-sm-6 mb-4">
             <div class="gallery-card" onclick="openModal(2)">
-                <img src="./images/pre13.jpeg" class="gallery-img" alt="Gallery 3">
+                <img src="./images/pre8.jpeg" class="gallery-img" alt="Gallery 3">
             </div>
         </div>
         <div class="col-md-3 col-sm-6 mb-4">
             <div class="gallery-card" onclick="openModal(3)">
-                <img src="./images/pre17.jpeg" class="gallery-img" alt="Gallery 4">
+                <img src="./images/pre3.jpeg" class="gallery-img" alt="Gallery 4">
             </div>
         </div>
         <div class="col-md-3 col-sm-6 mb-4">
             <div class="gallery-card" onclick="openModal(4)">
-                <img src="./images/pre11.jpeg" class="gallery-img" alt="Gallery 5">
+                <img src="./images/pre7.jpeg" class="gallery-img" alt="Gallery 5">
             </div>
         </div>
         <div class="col-md-3 col-sm-6 mb-4">
             <div class="gallery-card" onclick="openModal(5)">
-                <img src="./images/pre16.jpeg" class="gallery-img" alt="Gallery 6">
+                <img src="./images/pre2.jpeg" class="gallery-img" alt="Gallery 6">
             </div>
         </div>
         <div class="col-md-3 col-sm-6 mb-4">
             <div class="gallery-card" onclick="openModal(6)">
-                <img src="./images/img7.jpg" class="gallery-img" alt="Gallery 7">
+                <img src="./images/pre14.jpeg" class="gallery-img" alt="Gallery 7">
             </div>
         </div>
         <div class="col-md-3 col-sm-6 mb-4">
             <div class="gallery-card" onclick="openModal(7)">
-                <img src="./images/img11.jpg" class="gallery-img" alt="Gallery 8">
+                <img src="./images/pre10.jpeg" class="gallery-img" alt="Gallery 8">
             </div>
+        </div>
+        <div class=" py-3 text-center">
+            <a href="images.html"><button class="my-btn">
+                    <b>View more</b>
+                </button></a>
         </div>
     </div>
 </section>
@@ -794,7 +799,23 @@
 </section>
 <!-- footer ends  -->
 
+<script>
+    function openModal(imageSrc) {
+document.getElementById('modalImage').src = imageSrc;
+}
 
+
+let images = [
+'./images/pre17.jpeg',
+'./images/pre1.jpeg',
+'./images/pre8.jpeg',
+'./images/pre3.jpeg',
+'./images/pre7.jpeg',
+'./images/pre2.jpeg',
+'./images/pre14.jpeg',
+'./images/pre10.jpeg'
+];
+</script>
 <script src="./script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

@@ -1,19 +1,6 @@
 // Function to change the image source inside the modal
-function openModal(imageSrc) {
-    document.getElementById('modalImage').src = imageSrc;
-}
 
 
-let images = [
-    './images/pre1.jpeg',
-    './images/img18.jpeg',
-    './images/pre13.jpeg',
-    './images/pre17.jpeg',
-    './images/pre11.jpeg',
-    './images/pre16.jpeg',
-    './images/img7.jpg',
-    './images/img11.jpg'
-];
 let currentIndex = 0;
 
 function openModal(index) {
@@ -38,7 +25,7 @@ function changeImage(step) {
     document.getElementById("modalImage").src = images[currentIndex];
 }
 
-
+// 
 
 window.addEventListener("scroll", function () {
     let navbar = document.querySelector(".navbar");
@@ -69,4 +56,6 @@ var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-tog
 var dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
     return new bootstrap.Dropdown(dropdownToggleEl)
 })
+
+
 
