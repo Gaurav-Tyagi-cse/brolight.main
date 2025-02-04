@@ -16,8 +16,9 @@ transition: background 0.4s ease-in-out;
 }
 
 .nav-link{
-color: #ffffff;
+color: #ffffff !important;
 }
+
 
 .navbar.scrolled {
 background: rgba(0, 0, 0, 0.8); /* Scroll hone ke baad color */
