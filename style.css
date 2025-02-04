@@ -1532,6 +1532,11 @@ transform: scale(1.2) translateX(10px);
 
 
  /* form */
+ .quote-section h1{
+  color: #222;
+  font-size: 4rem;
+  font-weight: 800;
+ }
 
  .quote-section {
   padding: 50px;
