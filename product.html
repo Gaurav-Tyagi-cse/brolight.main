@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        body { font-family: Georgia, 'Times New Roman', Times, serif; }
+        body { font-family: Georgia, 'Times New Roman', Times, serif; background-color: black; }
         .social-icons a { color: white; margin: 0 10px; font-size: 20px; }
         .services .card { transition: transform 0.3s ease-in-out; }
         .services .card:hover { transform: scale(1.05); }
@@ -101,7 +101,6 @@
                 </ul>
             </div>
             
-    
             <!-- Social Media Icons -->
             <div class="social-icons">
     <a href="https://www.facebook.com/brolightproduction/" class="social-link">
@@ -124,144 +123,120 @@
     </nav>
     
     <section class="hero-section">
-        <img src="./images/service.jpeg" alt="Hero Image" class="hero-img">
+        <img src="./images/comm.jpg" alt="Hero Image" class="hero-img">
         <div class="hero-text">
-            <h1>Services</h1>
-            <p>Home / Our services</p>
+            <h1 style="background: #2f2f2f;"><b>Product Shoot</b></h1>
+            <p>Home / product shoot</p>
             <div class="blur-effect"></div>
         </div>
     </section>
     
+    <section id="gallery" class="container text-center mt-5">
+        <h2 class="text-center mb-4 underline " style="color: whitesmoke;">Product Shoot </h2>
+        <div class="row">
+            <!-- Gallery Items -->
 
-    <section class="py-4">
-        <div class="container">
-            <div class="row animated3">
-                <div class="col-12 text-center service ">
-                    <h2 class="text-line">Our Services</h2>
-                    <h5 class="py-4">Please have a look below to know more <br> about our services</h5>
+            <div class="col-md-3 col-sm-6 mb-4 rows">
+                <div class="gallery-card" onclick="openModal(0)">
+                    <img src="./images/p1.jpg" class="gallery-img" alt="Gallery 1">
                 </div>
-                <div class="col-md-4 col-lg-4 mb-4">
-                    <a href="commersial.html" class="text-decoration-none text-dark">
-                        <div class="serv-cards">
-                            <img src="./images/commercial.jpg" alt="Card Image" class="serv-cards-image ">
-                            <div class="serv-cards-content">
-                                <h2 class="serv-cards-title">Commercial Ad shoot </h2>
-                                <p class="serv-cards-text text-white"><p>"A commercial ad shoot is a professional video production that creatively promotes a brand, product, or service to engage the target audience."</p></p>
-                            </div>
-                        </div>
-                    </a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4 rows">
+                <div class="gallery-card" onclick="openModal(1)">
+                    <img src="./images/p2.jpg" class="gallery-img" alt="Gallery 2">
                 </div>
-                
+            </div>
 
-
-                <div class="col-md-4 col-lg-4 mb-4">
-                    <a href="product.html" class="text-decoration-none text-dark">
-                        <div class="serv-cards">
-                            <img src="images/product.jpg" alt="Card Image" class="serv-cards-image ">
-                            <div class="serv-cards-content">
-                                <h2 class="serv-cards-title">Product Shoot</h2>
-                                <p class="serv-cards-text text-white"><p>"A product shot is a high-quality visual representation of a product, highlighting its features, design, and details for advertising or marketing purposes."</p></p>
-                            </div>
-                        </div>
-                    </a>
+            <div class="col-md-3 col-sm-6 mb-4 rows">
+                <div class="gallery-card" onclick="openModal(2)">
+                    <img src="./images/p3.jpg" class="gallery-img" alt="Gallery 3">
                 </div>
+            </div>
 
-                <div class="col-md-4 col-lg-4 mb-4">
-                    <a href="#" class="text-decoration-none text-dark">
-                        <div class="serv-cards">
-                            <img src="images/eve-new.jpeg" alt="Card Image" class="serv-cards-image ">
-                            <div class="serv-cards-content">
-                                <h2 class="serv-cards-title">Events Photography and Videography</h2>
-                                <p class="serv-cards-text text-white"><p>"Preserving the magic of your event with vibrant and memorable photography and videography."</p></p>
-                            </div>
-                        </div>
-                    </a>
+            <div class="col-md-3 col-sm-6 mb-4 rows">
+                <div class="gallery-card" onclick="openModal(3)">
+                    <img src="./images/p4.jpg" class="gallery-img" alt="Gallery 4">
                 </div>
+            </div>
 
-                <div class="col-md-4 col-lg-4 mb-4">
-                    <a href="#" class="text-decoration-none text-dark">
-                        <div class="serv-cards">
-                            <img src="./images/model.webp" alt="Card Image" class="serv-cards-image ">
-                            <div class="serv-cards-content">
-                                <h2 class="serv-cards-title">Model Photoshoot</h2>
-                                <p class="serv-cards-text text-white"><p>"A model photoshoot is a professional photography session that captures a model’s poses, expressions, and styling to showcase fashion, beauty, or branding."</p></p>
-                            </div>
-                        </div>
-                    </a>
+            <div class="col-md-3 col-sm-6 mb-4 rows">
+                <div class="gallery-card" onclick="openModal(4)">
+                    <img src="./images/p5.jpg" class="gallery-img" alt="Gallery 5">
                 </div>
+            </div>
 
-                <div class="col-md-4 col-lg-4 mb-4">
-                    <a href="#" class="text-decoration-none text-dark">
-                        <div class="serv-cards">
-                            <img src="./images/mus3.webp" alt="Card Image" class="serv-cards-image ">
-                            <div class="serv-cards-content">
-                                <h2 class="serv-cards-title">Music Video Shoot</h2>
-                                <p class="serv-cards-text text-white"><p>"Creative production that visually represents a song through storytelling, performance, & cinematography to enhance its impact and audience engagement. "</p></p>
-                            </div>
-                        </div>
-                    </a>
+            <div class="col-md-3 col-sm-6 mb-4 rows">
+                <div class="gallery-card" onclick="openModal(5)">
+                    <img src="./images/p6.jpg" class="gallery-img" alt="Gallery 6">
                 </div>
+            </div>
 
-                        <div class="col-md-4 col-lg-4 mb-4">
-                            <a href="#" class="text-decoration-none text-dark">
-                                <div class="serv-cards">
-                                    <img src="./images/pre-new1.jpg" alt="Card Image" class="serv-cards-image ">
-                                    <div class="serv-cards-content">
-                                        <h2 class="serv-cards-title">Pre-Wedding Shoot</h2>
-                                        <p class="serv-cards-text text-white"><p>"Romantic photoshoot capturing a couple’s love story and chemistry before their wedding, set in beautiful locations with cinematic styling."</p></p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                            <div class="col-md-4 col-lg-4 mb-4">
-                            <a href="#" class="text-decoration-none text-dark">
-                                <div class="serv-cards">
-                                    <img src="images/sho2.jpeg" alt="Card Image" class="serv-cards-image ">
-                                    <div class="serv-cards-content">
-                                        <h2 class="serv-cards-title">Films Shoots and Production</h2>
-                                        <p class="serv-cards-text text-white"><p>"
-                                            Film and production shoot is the stage where scenes are filmed, involving actors, cameras, and crew to capture the footage."</p></p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-
-                             <div class="col-md-4 col-lg-4 mb-4">
-                            <a href="#" class="text-decoration-none text-dark">
-                                <div class="serv-cards">
-                                    <img src="images/podcastt.jpeg" alt="Card Image" class="serv-cards-image ">
-                                    <div class="serv-cards-content">
-                                        <h2 class="serv-cards-title">Podcast Shoot</h2>
-                                        <p class="serv-cards-text text-white"><p>"Podcast shoot is the process of recording audio or video content for a podcast, involving hosts, guests, microphones, cameras, and production equipment."</p></p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                       
-                        <div class="col-md-4 col-lg-4 mb-4">
-                            <a href="#" class="text-decoration-none text-dark">
-                                <div class="serv-cards">
-                                    <img src="images/std1.jpg" alt="Card Image" class="serv-cards-image ">
-                                    <div class="serv-cards-content">
-                                        <h2 class="serv-cards-title">Podcast Studio Shoot On Rent</h2>
-                                        <p class="serv-cards-text text-white"><p>"A podcast studio shoot on rent is when you rent a studio with all the necessary equipment and setup for recording high-quality podcast episodes."</p></p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                           
-                        <!-- add more -->
+            <div class="col-md-3 col-sm-6 mb-4 rows">
+                <div class="gallery-card" onclick="openModal(6)">
+                    <img src="./images/p7.jpg" class="gallery-img" alt="Gallery 7">
                 </div>
+            </div>
+
+            
+            <div class="col-md-3 col-sm-6 mb-4 rows ">
+                <div class="gallery-card" onclick="openModal(7)">
+                    <img src="./images/p8.jpg" class="gallery-img" alt="Gallery 8">
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4 rows">
+                <div class="gallery-card" onclick="openModal(8)">
+                    <img src="./images/p9.jpg" class="gallery-img" alt="Gallery 9">
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4 rows">
+                <div class="gallery-card" onclick="openModal(9)">
+                    <img src="./images/p10.jpg" class="gallery-img" alt="Gallery 10">
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4 rows">
+                <div class="gallery-card" onclick="openModal(10)">
+                    <img src="./images/p12.jpg" class="gallery-img" alt="Gallery 11">
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4 rows">
+                <div class="gallery-card" onclick="openModal(11)">
+                    <img src="./images/p11.jpg" class="gallery-img" alt="Gallery 12">
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4 rows">
+                <div class="gallery-card" onclick="openModal(12)">
+                    <img src="./images/p13.jpg" class="gallery-img" alt="Gallery 13">
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4 rows">
+                <div class="gallery-card" onclick="openModal(13)">
+                    <img src="./images/p14.jpg" class="gallery-img" alt="Gallery 14">
+                </div>
+            </div>
+           
+      
+
         </div>
     </section>
-
-
-
     
-  
+<!-- Modal for Image View -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img id="modalImage" class="img-fluid modal-img" alt="Full Screen Image">
+                <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+                <a class="next" onclick="changeImage(1)">&#10095;</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <!-- footer -->
     <section class="py-3 " style="background-color: rgb(0, 0, 0);">
         <div class="container ">
@@ -275,7 +250,7 @@
                 </div>
     
                 <div class="col-md-6 col-lg-3 ">
-                     <div class=" footer-menu">
+                    <div class=" footer-menu">
                         <h5 style="color:rgb(192, 239, 247);"><b> Services</b></h5>
                         <ul class="list-unstyled mt-3">
                             <a href="commersial.html" class='text-decoration-none  text-white'>
@@ -392,7 +367,7 @@
                         </div>
                         <div class="p-0">
                             <h5 class="m-0"><b>Email Address</b></h5>
-                            <p class="m-0" style="word-break: break-all;"><a href="mailto:brolightproduction@gmail.com" class="text-decoration-none  text-white">brolightproduction@gmail.com</a></p>
+                                                   <p class="m-0" style="word-break: break-all;"><a href="mailto:brolightproduction@gmail.com" class="text-decoration-none  text-white">brolightproduction@gmail.com</a></p>
 
                         </div>
                     </div>
@@ -415,7 +390,7 @@
                         <div class="">
                             <h5 class="text-center"><b>Social Icons</b></h5>
                             <div class="d-flex " role="search">
-                                <div class="card border-0 m-0">
+                                 <div class="card border-0 m-0">
                                     <ul>
                                         <li class="iso-pro pt-3 m-0">
                                             <span></span>
@@ -457,7 +432,6 @@
                                         </li>
                                     </ul>
                                 </div>
-                                
                             </div>
                         </div>
                     </div>
@@ -476,6 +450,33 @@
             </div>
         </div>
     </section>
+    
+    <script>
+        function openModal(imageSrc) {
+    document.getElementById('modalImage').src = imageSrc;
+}
+
+
+let images = [
+    './images/p1.jpg',
+    './images/p2.jpg',
+    './images/p3.jpg',
+    './images/p4.jpg',
+    './images/p5.jpg',
+    './images/p6.jpg',
+    './images/p7.jpg',
+    './images/p8.jpg',
+    './images/p9.jpg',
+    './images/p10.jpg',
+    './images/p12.jpg',
+    './images/p11.jpg',
+    './images/p13.jpg',
+    './images/p14.jpg'
+
+    
+   
+];
+    </script>
 <script src="./script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
