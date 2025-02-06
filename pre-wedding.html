@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brolight Production</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: Georgia, 'Times New Roman', Times, serif; background-color: black; }
+        .social-icons a { color: white; margin: 0 10px; font-size: 20px; }
+        .services .card { transition: transform 0.3s ease-in-out; }
+        .services .card:hover { transform: scale(1.05); }
+        /* Hero Section */
+        .hero-section {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: bold;
+    /* text-transform: uppercase; */
+    color: #ffffff;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+.hero-text p {
+    font-size: 20px;
+    color: white;
+    animation: fadeIn 2s ease-in-out;
+    position: relative;
+    z-index: 2;
+}
+
+/* Blur effect behind the text */
+.blur-effect {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    filter: blur(10px);
+    z-index: 1;
+}
+
+    </style>
+
+
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo2.png" alt="BROLIGHT PRODUCTION Logo" style="height: 50px; width: auto;">
+            </a>
+    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            
+                    <!-- Gallery Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="galleryDropdown" role="button" data-bs-toggle="dropdown">
+                            Gallery
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="galleryDropdown">
+                            <li><a class="dropdown-item" href="images.html">Photo</a></li>
+                            <li><a class="dropdown-item" href="video.html">Video</a></li>
+                        </ul>
+                    </li>
+            
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <!-- Social Media Icons -->
+            <div class="social-icons">
+    <a href="https://www.facebook.com/brolightproduction/" class="social-link">
+        <div class="icon-bg">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook">
+        </div>
+    </a>
+    <a href="https://www.instagram.com/brolight_production/" class="social-link">
+        <div class="icon-bg">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+        </div>
+    </a>
+    <a href="https://wa.me/+917827460354" class="social-link">
+        <div class="icon-bg">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+        </div>
+    </a>
+</div>
+        </div>
+    </nav>
+    
+    <section class="hero-section">
+        <img src="./images/pre-new1.jpg" alt="Hero Image" class="hero-img">
+        <div class="hero-text">
+            <h1>Pre-Wedding Shoot</h1>
+            <p>Home / Pre-Wedding Shoot</p>
+            <div class="blur-effect"></div>
+        </div>
+    </section>
+    
+    <section id="gallery" class="container text-center mt-5">
+        <h2 class="text-center mb-4 underline " style="color: whitesmoke;">Pre-Wedding Shoot </h2>
+        <div class="row">
+            <!-- Gallery Items -->
+
+            <div class="col-md-3 col-sm-6 mb-4 rows">
+                <div class="gallery-card" onclick="openModal(0)">
+                    <img src="./images/pre1.jpg" class="gallery-img" alt="Gallery 1">
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4 rows">
+                <div class="gallery-card" onclick="openModal(1)">
+                    <img src="./images/pre2.jpg" class="gallery-img" alt="Gallery 2">
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4 rows">
+                <div class="gallery-card" onclick="openModal(2)">
+                    <img src="./images/pre3.jpg" class="gallery-img" alt="Gallery 3">
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4 rows">
+                <div class="gallery-card" onclick="openModal(3)">
+                    <img src="./images/pre4.jpg" class="gallery-img" alt="Gallery 4">
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4 rows">
+                <div class="gallery-card" onclick="openModal(4)">
+                    <img src="./images/pre5.jpg" class="gallery-img" alt="Gallery 5">
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4 rows">
+                <div class="gallery-card" onclick="openModal(5)">
+                    <img src="./images/pre6.jpg" class="gallery-img" alt="Gallery 6">
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4 rows">
+                <div class="gallery-card" onclick="openModal(6)">
+                    <img src="./images/pre7.jpg" class="gallery-img" alt="Gallery 7">
+                </div>
+            </div>
+
+            
+            <div class="col-md-3 col-sm-6 mb-4 rows ">
+                <div class="gallery-card" onclick="openModal(7)">
+                    <img src="./images/pre8.jpg" class="gallery-img" alt="Gallery 8">
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4 rows">
+                <div class="gallery-card" onclick="openModal(8)">
+                    <img src="./images/pre9.jpg" class="gallery-img" alt="Gallery 9">
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4 rows">
+                <div class="gallery-card" onclick="openModal(9)">
+                    <img src="./images/pre10.jpg" class="gallery-img" alt="Gallery 10">
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4 rows">
+                <div class="gallery-card" onclick="openModal(10)">
+                    <img src="./images/pre11.jpg" class="gallery-img" alt="Gallery 11">
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4 rows">
+                <div class="gallery-card" onclick="openModal(11)">
+                    <img src="./images/pre12.jpg" class="gallery-img" alt="Gallery 12">
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4 rows">
+                <div class="gallery-card" onclick="openModal(12)">
+                    <img src="./images/pre13.jpg" class="gallery-img" alt="Gallery 13">
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4 rows">
+                <div class="gallery-card" onclick="openModal(13)">
+                    <img src="./images/pre14.jpg" class="gallery-img" alt="Gallery 14">
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4 rows">
+                <div class="gallery-card" onclick="openModal(14)">
+                    <img src="./images/pre15.jpg" class="gallery-img" alt="Gallery 15">
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4 rows">
+                <div class="gallery-card" onclick="openModal(15)">
+                    <img src="./images/pre16.jpg" class="gallery-img" alt="Gallery 16">
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4 rows">
+                <div class="gallery-card" onclick="openModal(16)">
+                    <img src="./images/pre17.jpg" class="gallery-img" alt="Gallery 17">
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4 rows">
+                <div class="gallery-card" onclick="openModal(17)">
+                    <img src="./images/pre18.jpg" class="gallery-img" alt="Gallery 18">
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4 rows">
+                <div class="gallery-card" onclick="openModal(18)">
+                    <img src="./images/pre19.jpg" class="gallery-img" alt="Gallery 19">
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4 rows">
+                <div class="gallery-card" onclick="openModal(19)">
+                    <img src="./images/pre20.jpg" class="gallery-img" alt="Gallery 20">
+                </div>
+            </div>
+           
+      
+
+        </div>
+    </section>
+    
+<!-- Modal for Image View -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img id="modalImage" class="img-fluid modal-img" alt="Full Screen Image">
+                <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+                <a class="next" onclick="changeImage(1)">&#10095;</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- footer -->
+    <section class="py-3 " style="background-color: rgb(0, 0, 0);">
+        <div class="container ">
+            <div class="row mb-2">
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-white">
+                        <img src="images/logo2.png" style="width: 180px" alt="">
+                        <p class="pt-4">We provide premium film services, capturing your special moments with expertise and creativity. 
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="col-md-6 col-lg-3 ">
+                    <div class=" footer-menu">
+                        <h5 style="color:rgb(192, 239, 247);"><b> Services</b></h5>
+                        <ul class="list-unstyled mt-3">
+                            <a href="commersial.html" class='text-decoration-none  text-white'>
+                                <li>Commercial Ad Shoot</li>
+                            </a><a href="film.html" class='text-decoration-none  text-white'>
+                                <li>Short film Shoot</li>
+                            </a><a href="studio-rent.html" class='text-decoration-none  text-white'>
+                                <li>Podcast Studio Shoot On Rent</li>
+                            </a><a href="music.html" class='text-decoration-none  text-white'>
+                                <li>Music Shoot</li>
+                            </a><a href="model.html" class='text-decoration-none  text-white'>
+                                <li>Model Shoot</li>
+                            </a>
+                            <!-- <a href="services.html" class="text-decoration-none  text-white">
+                                <li>More Services...</li> -->                        <div class=" py-3">
+                            <a href="services.html"><button class="my-btn">
+                                    <b>More services</b>
+                                </button></a>
+                        </div>
+                            </a>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="col-md-6 col-lg-3">
+                    <div class="footer-menu">
+                        <h5 style="color:rgb(192, 239, 247);"><b>Our Links</b></h5>
+    
+                        <ul class="list-unstyled mt-3">
+                            <a href="index.html" class="text-decoration-none  text-white">
+                                <li>Home</li>
+                            </a>
+                            <a href="about.html" class="text-decoration-none  text-white">
+                                <li>About us</li>
+                            </a>
+                            <a href="images.html" class="text-decoration-none  text-white">
+                                <li>Images</li>
+                            </a>
+                            <a href="video.html" class="text-decoration-none  text-white">
+                                <li>Videos</li>
+                            </a>
+                            <a href="services.html" class="text-decoration-none  text-white">
+                                <li>Services</li>
+                            </a>
+                            <a href="contact.html" class="text-decoration-none  text-white">
+                                <li>Contact us</li>
+                            </a>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Image Grid -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="">
+                        <h5 style="color:rgb(192, 239, 247);"><b>Gallery</b></h5>
+                        <div class="mt-3">
+                            <div class="d-flex flick mb-2">
+                                <div class="mx-1 cards overflow-hidden">
+                                    <img src="images/flick.jpeg" alt="">
+                                </div>
+                                <div class="mx-1 cards overflow-hidden">
+                                    <img src="images/flick1.jpeg" alt="">
+                                </div>
+                                <div class="mx-1 cards overflow-hidden">
+                                    <img src="images/flick2.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="d-flex flick mb-2">
+                                <div class="mx-1 cards overflow-hidden">
+                                    <img src="images/flick6.jpeg" alt="">
+                                </div>
+                                <div class="mx-1 cards overflow-hidden">
+                                    <img src="images/flick4.jpeg" alt="">
+                                </div>
+                                <div class="mx-1 cards overflow-hidden">
+                                    <img src="images/flick5.jpeg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Modal Structure -->
+                <div id="imageModal" class="modal">
+                    <span class="cross">&times;</span>
+                    <img class="modal-content" id="modalImage">
+                    <div id="caption"></div>
+                    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                </div>
+    
+            </div>
+    
+    
+    
+    
+            <div class="row text-white pt-2 footer-hr">
+                <div class="col-md-6 col-lg-3 mb-2">
+                    <div class="d-flex align-items-center">
+                        <div class="icons pe-3">
+                            <i class="fa-solid fa-phone-volume fs-1" style="color:rgb(192, 239, 247);"></i>
+                        </div>
+                        <div class="p-0">
+                            <h5 class="m-0"><b>Call us now</b></h5>
+                           <p class="m-0"><a href="tel:917827460354" class="text-decoration-none  text-white">+91 7827460354</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-2">
+                    <div class="d-flex align-items-center ">
+                        <div class="icons pe-3">
+                            <i class="fa-solid fa-envelope fs-1" style="color:rgb(192, 239, 247);"></i>
+                        </div>
+                        <div class="p-0">
+                            <h5 class="m-0"><b>Email Address</b></h5>
+                                                   <p class="m-0" style="word-break: break-all;"><a href="mailto:brolightproduction@gmail.com" class="text-decoration-none  text-white">brolightproduction@gmail.com</a></p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-2">
+                    <div class="d-flex align-items-center ">
+                        <div class="icons pe-3 ">
+                            <i class="fa-solid fa-location-dot fs-1" style="color:rgb(192, 239, 247);"></i>
+                        </div>
+                        <div class="p-0">
+                            <h5 class="m-0"><b>Location</b></h5>
+                            <p class="m-0">Building no 159,A-block,Transport Nagar, Sector 69, Noida, U.P 201301</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-6 col-lg-3 mb-2">
+                    <div class="d-flex  ">
+    
+                        <div class="">
+                            <h5 class="text-center"><b>Social Icons</b></h5>
+                            <div class="d-flex " role="search">
+                                 <div class="card border-0 m-0">
+                                    <ul>
+                                        <li class="iso-pro pt-3 m-0">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <a href="https://www.facebook.com/brolightproduction/" target="_blank">
+                                                <svg viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg" class="svg">
+                                                    <path
+                                                        d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                
+                                        <li class="iso-pro pt-3 m-0">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <a href="https://www.instagram.com/brolight_production/" target="_blank">
+                                                <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="color:#C13584;">
+                                                    <path
+                                                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                
+                                        <li class="iso-pro pt-3 m-0">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <a href="https://wa.me/+917827460354" target="_blank">
+                                                <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="color:#25D366;">
+                                                    <path
+                                                        d="M380.9 97.1C339.1 55.3 283.1 32 224 32 100.3 32 0 132.3 0 256c0 45 11.9 89 34.6 127.5L2.5 480l100.2-31.7C138.5 471.3 180.3 480 224 480c123.7 0 224-100.3 224-224 0-59.1-23.3-115.1-65.1-157.9zM224 438c-38.2 0-75.6-10.3-108.2-29.8l-7.7-4.6-59.5 18.8 19.4-58-5-8c-21.1-34.2-32.3-73.8-32.3-113.4C30.7 148.5 138.5 48 224 48c50.8 0 98.5 19.8 134.3 55.7S414 205.2 414 256c0 85.5-100.5 182-190 182zm107.8-134.5c-5.9-3-34.9-17.2-40.3-19.1-5.4-2-9.4-3-13.4 3-3.9 5.9-15.4 19.1-18.9 23-3.4 3.9-7 4.4-12.9 1.5-5.9-3-24.9-9.1-47.3-29-17.5-15.6-29.3-34.8-32.8-40.7-3.4-5.9-.4-9.1 2.6-12 2.7-2.7 5.9-7 8.9-10.5 3-3.4 3.9-5.9 5.9-9.9s1-7.4-.5-10.5c-1.5-3-13.4-32.3-18.3-44.3-4.8-11.5-9.6-9.9-13.4-10.1-3.4-.2-7.4-.3-11.4-.3s-10.5 1.5-16 7.4c-5.4 5.9-21.1 20.5-21.1 50.2s21.6 58.2 24.6 62.3c3 4 42.5 68.3 103 96.2 14.4 6.3 25.7 10 34.5 12.8 14.5 4.6 27.8 3.9 38.2 2.4 11.6-1.7 34.9-14.2 39.9-27.9 4.9-13.8 4.9-25.5 3.4-27.9-1.5-2.4-5.5-3.8-11.4-6.8z">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+    
+            <div class="row text-white ">
+                <div class="col-md-12">
+                    <div class="justify-content-center align-items-center d-flex">
+                        <h6> &copy; Copyright 2024 <span style="color:rgb(192, 239, 247);">Brolight Production</span>.
+                            All rights reserved Designed and Maintained by <a class="text-decoration-none text-white" href="http://www.bhoomitechzone.com/"> Bhoomi Techzone Pvt. Ltd.</a>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        function openModal(imageSrc) {
+    document.getElementById('modalImage').src = imageSrc;
+}
+
+
+let images = [
+    './images/pre1.jpg',
+    './images/pre2.jpg',
+    './images/pre3.jpg',
+    './images/pre4.jpg',
+    './images/pre5.jpg',
+    './images/pre6.jpg',
+    './images/pre7.jpg',
+    './images/pre8.jpg',
+    './images/pre9.jpg',
+    './images/pre10.jpg',
+    './images/pre11.jpg',
+    './images/pre12.jpg',
+    './images/pre13.jpg',
+    './images/pre14.jpg',
+    './images/pre15.jpg',
+    './images/pre16.jpg',
+    './images/pre17.jpg',
+    './images/pre18.jpg',
+    './images/pre19.jpg',
+    './images/pre20.jpg'
+    
+   
+];
+    </script>
+<script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
